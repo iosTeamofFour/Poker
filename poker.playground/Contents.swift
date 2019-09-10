@@ -39,7 +39,7 @@ func personHavePoker(personNum:Int,pokerNum:Int)
         for _ in 1...personNum {
             var row = [Poker]()
             for _ in 1...pokerNum {
-              var random=Int(arc4random()%j)
+              let random=Int(arc4random()%j)
                  j=j-1
                 row.append(allPoker[random])
                  allPoker.remove(at:random)
